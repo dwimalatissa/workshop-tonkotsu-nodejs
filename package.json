@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint */**.js",
-    "test": "nyc mocha",
+    "test": "nyc mocha --check-coverage --lines 90 ",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "dependencies": {
@@ -23,13 +23,5 @@
   "devDependencies": {
     "eslint": "5.5.0",
     "prettier": "^1.18.2"
-  },
-  "coverageThreshold": {
-    "global": {
-    "branches": 90,
-    "functions": 90,
-    "lines": 90,
-    "statements": 90
-    }
   }
 }
