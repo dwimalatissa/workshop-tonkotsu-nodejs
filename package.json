@@ -26,6 +26,6 @@
   },
   "nyc": {
     "check-coverage": true,
-    "lines": 40
+    "lines": 90
   }
 }
